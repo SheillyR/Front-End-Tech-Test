@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import URL from '../../classes/Url/URL';
 import API from '../../classes/Api/Api';
 
 const ProductListPageService = () => {
@@ -7,7 +6,7 @@ const ProductListPageService = () => {
 
   useEffect(() => {
     const getProducts = async () => {
-      const api = new API(`${URL.URL_SERVER}api/products`);
+      const api = new API(`http://localhost:5000/api/products`);
       const response = await api.get();
       const { data } = response;
       setProducts(data);
