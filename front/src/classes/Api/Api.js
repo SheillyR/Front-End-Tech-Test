@@ -1,9 +1,8 @@
 import { axios } from './Api.module';
 
 class Api {
-  constructor(url, headers = {}) {
+  constructor(url) {
     this.url = url;
-    this.headers = headers;
   }
 
   async get() {
