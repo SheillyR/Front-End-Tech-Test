@@ -1,13 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './item.styles.css';
 
 const Item = (props) => {
 
   return(
     <div className='item'>
-      <div className='imageContainer'>
-        <img className='imageContainer_image' src={`http://localhost:5000/${props.image}`} alt={props.name}/>
-      </div>
+      <Link className='link' to={`/products/${props._id}`}>
+        <div className='imageContainer'>
+          <img className='imageContainer_image' src={`http://localhost:5000/${props.image}`} alt={props.name}/>
+        </div>
+      </Link>
       <div className='content'>
         <h2 className='content_brand'>{props.brand}</h2>
         <h2 className='content_name'>{props.name}</h2>

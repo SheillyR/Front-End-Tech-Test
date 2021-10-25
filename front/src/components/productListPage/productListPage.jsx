@@ -11,10 +11,10 @@ const ProductListPage = () => {
         ?
         products.map((product, i) => {
           return(
-            <Item
-            key={i} 
-            {...product}
-            />
+              <Item
+                key={i} 
+                {...product}
+              />
           );
         })
         :

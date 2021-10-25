@@ -11,8 +11,8 @@ const createRoutes = (
     <Switch>
       <div className='App'>
         <Route exact path='/' component={App} />
+        <Route exact path='/products/:id' component={ProductDisplayPage} />
         <Route exact path='/cart' component={CartPage} />
-        <Route exact path='/product' component={ProductDisplayPage} />
       </div>
     </Switch>
   </Router >
