@@ -2,7 +2,7 @@ import React from 'react';
 import { ProductDisplayPageService } from './productDisplayPage.module';
 import ShopContext from '../context/ShopContext';
 import './productDisplayPage.styles.css';
-import MainNavigation from '../../shared/mainNavigation/mainNavigation';
+import NavBar from '../../shared/navBar/navBar';
 
 
 const ProductDisplayPage = ({ match }) => {
@@ -12,7 +12,7 @@ const ProductDisplayPage = ({ match }) => {
     <ShopContext.Consumer>
       {context => (
         <React.Fragment>
-          <MainNavigation
+          <NavBar
             cartItemNumber={context.cart.reduce((count, curItem) => {
               return count + curItem.quantity;
             }, 0)}

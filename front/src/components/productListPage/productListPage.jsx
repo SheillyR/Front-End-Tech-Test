@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ShopContext from "../context/ShopContext";
-import MainNavigation from '../../shared/mainNavigation/mainNavigation';
+import NavBar from '../../shared/navBar/navBar';
 import './productListPage.styles.css';
 
 const ProductListPage = (props) => {
@@ -9,7 +9,7 @@ const ProductListPage = (props) => {
     <ShopContext.Consumer>
       {context => (
         <React.Fragment>
-          <MainNavigation
+          <NavBar
             cartItemNumber={context.cart.reduce((count, curItem) => {
               return count + curItem.quantity;
             }, 0)}

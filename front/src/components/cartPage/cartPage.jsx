@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ShopContext from "../context/ShopContext";
-import MainNavigation from "../../shared/mainNavigation/mainNavigation";
+import NavBar from "../../shared/navBar/navBar";
 import "./cartPage.styles.css";
 
 function CartPage(props) {
@@ -8,7 +8,7 @@ function CartPage(props) {
 
   return (
     <React.Fragment>
-      <MainNavigation
+      <NavBar
         cartItemNumber={context.cart.reduce((count, curItem) => {
           return count + curItem.quantity;
         }, 0)}

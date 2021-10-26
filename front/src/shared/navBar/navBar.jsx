@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./mainNavigation.styles.css";
+import "./navBar.styles.css";
 
-const MainNavigation = (props) => (
-  <header className="main-navigation">
+const NavBar = (props) => (
+  <header className="nav-bar">
     <nav>
       <ul>
         <li>
@@ -17,4 +17,4 @@ const MainNavigation = (props) => (
   </header>
 );
 
-export default MainNavigation;
+export default NavBar;
