@@ -5,6 +5,8 @@
   - [Descripción del desafío](#descripción-del-desafío)
   - [Dependencias utilizada](#dependencias-utilizadas)
   - [Board en GitHub](#board-en-github)
+  - [Project](#project)
+
 ## Requerimientos mínimos
 
 Node 14.15.0
@@ -64,8 +66,9 @@ Carrito de compras simple que traiga toda la info del API local, éste debe cont
   `npm install dotenv`
 - react-router-dom
   `npm install --save react-router-dom`
-- gh-pages
- `npm install --save-dev gh-pages`
 
 ## Board en GitHub
   `https://github.com/SheillyR/Front-End-Tech-Test/projects/1`
+  
+## Project
+  `http://localhost:3000/`
