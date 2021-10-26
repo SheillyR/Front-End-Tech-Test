@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ShopContext from "../context/ShopContext";
-import MainNavigation from '../mainNavigation/mainNavigation';
+import MainNavigation from '../../shared/mainNavigation/mainNavigation';
 import './productListPage.styles.css';
 
 const ProductListPage = (props) => {
@@ -28,9 +28,6 @@ const ProductListPage = (props) => {
                     <h3 className='content_price'>$ {product.price}</h3>
                   </div>
                   <div className='selectBtn'>
-                    <select className='selectBtn_count'>
-                      <option>{product.countInStock}</option>
-                    </select>
                     <button 
                       type='button' 
                       className='selectBtn_addCart'

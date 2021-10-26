@@ -2,7 +2,7 @@ import React from 'react';
 import { ProductDisplayPageService } from './productDisplayPage.module';
 import ShopContext from '../context/ShopContext';
 import './productDisplayPage.styles.css';
-import MainNavigation from '../mainNavigation/mainNavigation';
+import MainNavigation from '../../shared/mainNavigation/mainNavigation';
 
 
 const ProductDisplayPage = ({ match }) => {
@@ -35,9 +35,6 @@ const ProductDisplayPage = ({ match }) => {
                     </p>
                   </div>
                   <div className='select-button'>
-                    <select className='selectBtn_count'>
-                      <option>{item.countInStock}</option>
-                    </select>
                     <button type='button' className='selectBtn_addCart'>
                       Add item to cart
                     </button>

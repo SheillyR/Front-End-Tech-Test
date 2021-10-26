@@ -2,10 +2,10 @@ export const ADD_PRODUCT = "ADD_PRODUCT";
 export const REMOVE_PRODUCT = "REMOVE_PRODUCT";
 
 const addProductToCart = (product, state) => {
-  console.log("adding product", product);
+  //console.log("adding product", product);
   const updatedCart = [...state.cart];
   const updatedItemIndex = updatedCart.findIndex(
-    item => item.id === product.id
+    item => item._id === product.id
   );
 
   if (updatedItemIndex < 0) {
@@ -22,7 +22,7 @@ const addProductToCart = (product, state) => {
 };
 
 const removeProductFromCart = (productId, state) => {
-  console.log("remove product: " + productId);
+  //console.log("remove product: " + productId);
   const updatedCart = [...state.cart];
   const updatedItemIndex = updatedCart.findIndex(item => item.id === productId);
 
