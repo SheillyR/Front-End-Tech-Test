@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div style={{ textAlign: 'center' }} className='App'>
-      <h1> Prueba tecnica front Ecomsur 2021</h1>
       <ProductListPage />
       {/* Check to see if express server is running correctly */}
     </div>
